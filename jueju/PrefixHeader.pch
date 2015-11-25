@@ -15,6 +15,7 @@
 
 #define FONT_NAME @"MingLiU"
 #define ARTICLE_FONT_SIZE (18.0)
+#define APP_COLOR [UIColor colorWithRed:0.986 green:0.134 blue:0.236 alpha:1.000]
 
 #import "UIView+Progress.h"
 

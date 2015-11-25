@@ -258,9 +258,16 @@ static dispatch_queue_t myQueue;
         id<WTAttributedStringLink> link = [self getLinkAtPoint:location];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            if ([self.delegate respondsToSelector:@selector(textView:linkTapped:)]) {
-                [self.delegate textView:self linkTapped:link];
+            if (link) {
+                if ([self.delegate respondsToSelector:@selector(textView:linkTapped:)]) {
+                    [self.delegate textView:self linkTapped:link];
+                }
+            }else{
+                if ([self.delegate respondsToSelector:@selector(textView:blankAreaTapped:)]) {
+                    [self.delegate textView:self blankAreaTapped:location];
+                }
             }
+
         });
         
     });

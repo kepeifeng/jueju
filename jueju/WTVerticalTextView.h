@@ -23,6 +23,7 @@
 @property (nonatomic, strong) NSArray * links;
 
 -(void)updateAttributedString;
+-(id<WTAttributedStringLink>)getLinkAtPoint:(CGPoint)location;
 
 @end
 
@@ -30,5 +31,5 @@
 @protocol WTVerticalTextViewDelegate <NSObject>
 @optional
 -(void)textView:(WTVerticalTextView *)textView linkTapped:(id<WTAttributedStringLink>)link;
-
+-(void)textView:(WTVerticalTextView *)textView blankAreaTapped:(CGPoint)point;
 @end

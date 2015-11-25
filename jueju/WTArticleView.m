@@ -26,18 +26,21 @@
 
     _titleView = [[WTVerticalTextView alloc] init];
     _titleView.font = [UIFont fontWithName:@"MingLiU" size:24];
+    _titleView.userInteractionEnabled = NO;
 //    _titleView.backgroundColor = [UIColor redColor];
     [self addSubview:_titleView];
     
     _authorLabel = [[WTVerticalTextView alloc] init];
     _authorLabel.font = [UIFont fontWithName:@"MingLiU" size:18];
+    _authorLabel.userInteractionEnabled = NO;
 //    _authorLabel.backgroundColor = [UIColor yellowColor];
     [self addSubview:_authorLabel];
     
     _contentLabel = [[WTVerticalTextView alloc] init];
     _contentLabel.font = [UIFont fontWithName:@"MingLiU" size:18];
     _contentLabel.minimumLineHeight = 36;
-    _contentLabel.delegate = self;
+    _contentLabel.userInteractionEnabled = NO;
+//    _contentLabel.delegate = self;
 //    _contentLabel.backgroundColor = [UIColor blueColor];
     [self addSubview:_contentLabel];
     
@@ -128,10 +131,12 @@
         if (note.range.length == 0 || note.range.location == NSNotFound) {
             continue;
         }
-        [newText addAttributes:@{NSUnderlineStyleAttributeName: @(NSUnderlinePatternDash), NSUnderlineColorAttributeName:[UIColor blackColor]} range:note.range];
+        [newText addAttributes:@{NSForegroundColorAttributeName: APP_COLOR} range:note.range];
+/*
         NSString * chineseNumber = [NSString convertArabicNumbersToChinese:note.index];
         NSDictionary * attr = [WTArticleView attributeDictionaryWithRubyText:chineseNumber];
         [newText addAttributes:attr range:note.range];
+*/
     }
     
     

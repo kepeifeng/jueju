@@ -21,7 +21,7 @@
     UIWindow * window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window = window;
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.tintColor = [UIColor colorWithRed:0.986 green:0.134 blue:0.236 alpha:1.000];
+    self.window.tintColor = APP_COLOR;
     
     WTSqliteViewController * mainViewController = [WTSqliteViewController new];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:mainViewController];

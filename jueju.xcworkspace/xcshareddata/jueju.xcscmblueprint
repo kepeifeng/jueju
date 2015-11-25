@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BEDA04A8FA8514BF30C657E8B709934385448806",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E04F3687C276933E9D892BB1F998181AAD90A44D" : 0,
+    "BEDA04A8FA8514BF30C657E8B709934385448806" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A3C3CD5C-A21B-46BB-952A-2A40718C099C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E04F3687C276933E9D892BB1F998181AAD90A44D" : "WorldTravel\/",
+    "BEDA04A8FA8514BF30C657E8B709934385448806" : "jueju\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "jueju",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "jueju.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kepeifeng\/jueju.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BEDA04A8FA8514BF30C657E8B709934385448806"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kepeifeng\/WorldTravel.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E04F3687C276933E9D892BB1F998181AAD90A44D"
+    }
+  ]
+}

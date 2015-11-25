@@ -32,7 +32,7 @@
     
     NSArray<NSTextCheckingResult *> * matches = [numberExp matchesInString:self.text options:0 range:(NSMakeRange(0, self.text.length))];
     NSInteger offset = 0;
-    UIFont * markFont = [UIFont fontWithName:self.font.fontName size:9];
+//    UIFont * markFont = [UIFont fontWithName:self.font.fontName size:9];
 
 /*
     for (NSTextCheckingResult * result in matches) {

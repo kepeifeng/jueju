@@ -117,7 +117,7 @@
     
     
     NSRegularExpression * bodyExp = [NSRegularExpression regularExpressionWithPattern:@"【.+\\s+" options:0 error:&error];
-    NSString * oldContent = entity.content;
+//    NSString * oldContent = entity.content;
     NSMutableString * newBody = [entity.content mutableCopy];
     entity.content = newBody;
     
@@ -127,7 +127,7 @@
         NSLog(@"%@", entity.content);
     }
     
-    NSRegularExpression * linebreakExp = [NSRegularExpression regularExpressionWithPattern:@"[\\n]{3,}" options:(0) error:nil];
+    NSRegularExpression * linebreakExp = [NSRegularExpression regularExpressionWithPattern:@"[\\n\\r]{2,}" options:(0) error:nil];
     [linebreakExp replaceMatchesInString:newBody options:0 range:NSMakeRange(0, newBody.length) withTemplate:@"\n"];
 //    entity.content = [entity.content stringByReplacingOccurrencesOfString:@"\n\n\n" withString:@"\n"];
 

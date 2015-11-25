@@ -69,7 +69,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    WTArticleEntity * entity = _items[indexPath.row];
+//    WTArticleEntity * entity = _items[indexPath.row];
     
     WTArticleViewController * articleVC = [[WTArticleViewController alloc] init];
     //    articleVC.articleEntity = entity;

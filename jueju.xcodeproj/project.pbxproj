@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3767BFCD1C05BF7600C30B4C /* WTLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 3767BFCA1C05BF7600C30B4C /* WTLink.m */; };
+		3767BFCE1C05BF7600C30B4C /* WTNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 3767BFCC1C05BF7600C30B4C /* WTNote.m */; };
 		37CBEC301BFD7977004C7F4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBEC2F1BFD7977004C7F4C /* main.m */; };
 		37CBEC331BFD7977004C7F4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBEC321BFD7977004C7F4C /* AppDelegate.m */; };
 		37CBEC361BFD7977004C7F4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBEC351BFD7977004C7F4C /* ViewController.m */; };
@@ -33,8 +35,6 @@
 		37CBEC9E1BFDCF8A004C7F4C /* WTVerticalTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBEC951BFDCF8A004C7F4C /* WTVerticalTextViewController.m */; };
 		37CBEC9F1BFDCF8A004C7F4C /* WTVerticalTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBEC971BFDCF8A004C7F4C /* WTVerticalTextView.m */; };
 		37CBECA01BFDCF8A004C7F4C /* WTPoetryContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBEC991BFDCF8A004C7F4C /* WTPoetryContentView.m */; };
-		37CBECA11BFDCF8A004C7F4C /* WTNote.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBEC9B1BFDCF8A004C7F4C /* WTNote.m */; };
-		37CBECA21BFDCF8A004C7F4C /* WTLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBEC9D1BFDCF8A004C7F4C /* WTLink.m */; };
 		37CBECA61BFDD0BC004C7F4C /* NSString+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBECA51BFDD0BC004C7F4C /* NSString+Utility.m */; };
 		37CBECA91BFDD0CB004C7F4C /* NSFileManager+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBECA81BFDD0CB004C7F4C /* NSFileManager+Utility.m */; };
 		37CBECC71BFDD0E7004C7F4C /* UIView+Progress.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CBECAB1BFDD0E7004C7F4C /* UIView+Progress.m */; };
@@ -82,6 +82,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3767BFC91C05BF7600C30B4C /* WTLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTLink.h; sourceTree = "<group>"; };
+		3767BFCA1C05BF7600C30B4C /* WTLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTLink.m; sourceTree = "<group>"; };
+		3767BFCB1C05BF7600C30B4C /* WTNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNote.h; sourceTree = "<group>"; };
+		3767BFCC1C05BF7600C30B4C /* WTNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNote.m; sourceTree = "<group>"; };
 		37CBEC2B1BFD7977004C7F4C /* jueju.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jueju.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CBEC2F1BFD7977004C7F4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37CBEC311BFD7977004C7F4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,10 +136,6 @@
 		37CBEC971BFDCF8A004C7F4C /* WTVerticalTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTVerticalTextView.m; sourceTree = "<group>"; };
 		37CBEC981BFDCF8A004C7F4C /* WTPoetryContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPoetryContentView.h; sourceTree = "<group>"; };
 		37CBEC991BFDCF8A004C7F4C /* WTPoetryContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPoetryContentView.m; sourceTree = "<group>"; };
-		37CBEC9A1BFDCF8A004C7F4C /* WTNote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNote.h; sourceTree = "<group>"; };
-		37CBEC9B1BFDCF8A004C7F4C /* WTNote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNote.m; sourceTree = "<group>"; };
-		37CBEC9C1BFDCF8A004C7F4C /* WTLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTLink.h; sourceTree = "<group>"; };
-		37CBEC9D1BFDCF8A004C7F4C /* WTLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTLink.m; sourceTree = "<group>"; };
 		37CBECA41BFDD0BC004C7F4C /* NSString+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utility.h"; sourceTree = "<group>"; };
 		37CBECA51BFDD0BC004C7F4C /* NSString+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utility.m"; sourceTree = "<group>"; };
 		37CBECA71BFDD0CB004C7F4C /* NSFileManager+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Utility.h"; sourceTree = "<group>"; };
@@ -207,6 +207,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3767BFC81C05BF5200C30B4C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3767BFC91C05BF7600C30B4C /* WTLink.h */,
+				3767BFCA1C05BF7600C30B4C /* WTLink.m */,
+				3767BFCB1C05BF7600C30B4C /* WTNote.h */,
+				3767BFCC1C05BF7600C30B4C /* WTNote.m */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
 		37CBEC221BFD7977004C7F4C = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +243,7 @@
 		37CBEC2D1BFD7977004C7F4C /* jueju */ = {
 			isa = PBXGroup;
 			children = (
+				3767BFC81C05BF5200C30B4C /* DataModel */,
 				37CBECA31BFDD0AF004C7F4C /* Category */,
 				37CBEC311BFD7977004C7F4C /* AppDelegate.h */,
 				37CBEC321BFD7977004C7F4C /* AppDelegate.m */,
@@ -270,10 +282,6 @@
 				37CBEC971BFDCF8A004C7F4C /* WTVerticalTextView.m */,
 				37CBEC981BFDCF8A004C7F4C /* WTPoetryContentView.h */,
 				37CBEC991BFDCF8A004C7F4C /* WTPoetryContentView.m */,
-				37CBEC9A1BFDCF8A004C7F4C /* WTNote.h */,
-				37CBEC9B1BFDCF8A004C7F4C /* WTNote.m */,
-				37CBEC9C1BFDCF8A004C7F4C /* WTLink.h */,
-				37CBEC9D1BFDCF8A004C7F4C /* WTLink.m */,
 				37CBEC3D1BFD7978004C7F4C /* Assets.xcassets */,
 				37CBEC421BFD7978004C7F4C /* Info.plist */,
 				37CBEC3A1BFD7978004C7F4C /* jueju.xcdatamodeld */,
@@ -477,6 +485,7 @@
 				TargetAttributes = {
 					37CBEC2A1BFD7977004C7F4C = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = B83FF6M6VW;
 					};
 					37CBEC461BFD7978004C7F4C = {
 						CreatedOnToolsVersion = 7.1;
@@ -602,13 +611,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3767BFCE1C05BF7600C30B4C /* WTNote.m in Sources */,
 				37CBEC8E1BFDCF7E004C7F4C /* WTDynastyEntity.m in Sources */,
 				37CBECCE1BFDD0E7004C7F4C /* HTProgressHUDIndicatorView.m in Sources */,
 				37CBECCA1BFDD0E7004C7F4C /* HTProgressHUDAnimation.m in Sources */,
 				37CBEC8F1BFDCF7E004C7F4C /* WTAlertAction.m in Sources */,
 				37CBEC361BFD7977004C7F4C /* ViewController.m in Sources */,
 				37CBEC8A1BFDCF7E004C7F4C /* WTVerticalTextContainer.m in Sources */,
-				37CBECA21BFDCF8A004C7F4C /* WTLink.m in Sources */,
 				37CBECA01BFDCF8A004C7F4C /* WTPoetryContentView.m in Sources */,
 				37CBEC9F1BFDCF8A004C7F4C /* WTVerticalTextView.m in Sources */,
 				37CBEC891BFDCF7E004C7F4C /* WTArticleEntity.m in Sources */,
@@ -619,11 +628,11 @@
 				37CBEC9E1BFDCF8A004C7F4C /* WTVerticalTextViewController.m in Sources */,
 				37CBEC911BFDCF7E004C7F4C /* WTBasicEntityListViewController.m in Sources */,
 				37CBECCD1BFDD0E7004C7F4C /* HTProgressHUDImageIndicatorView.m in Sources */,
+				3767BFCD1C05BF7600C30B4C /* WTLink.m in Sources */,
 				37CBEC861BFDCF7E004C7F4C /* WTSqliteViewController.m in Sources */,
 				37CBECA61BFDD0BC004C7F4C /* NSString+Utility.m in Sources */,
 				37CBECC91BFDD0E7004C7F4C /* HTProgressHUD.m in Sources */,
 				37CBEC931BFDCF7E004C7F4C /* WTDictionaryItemView.m in Sources */,
-				37CBECA11BFDCF8A004C7F4C /* WTNote.m in Sources */,
 				37CBECCF1BFDD0E7004C7F4C /* HTProgressHUDPieIndicatorView.m in Sources */,
 				37CBECD01BFDD0E7004C7F4C /* HTProgressHUDRingIndicatorView.m in Sources */,
 				37CBEC901BFDCF7E004C7F4C /* WTPoetrySearchViewController.m in Sources */,
@@ -759,12 +768,15 @@
 			baseConfigurationReference = C53994AC87F22F25FA18F9E0 /* Pods-jueju.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = jueju/PrefixHeader.pch;
 				INFOPLIST_FILE = jueju/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aroh.jueju;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -773,12 +785,15 @@
 			baseConfigurationReference = C151AC28C80D9B3DD62697BD /* Pods-jueju.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = jueju/PrefixHeader.pch;
 				INFOPLIST_FILE = jueju/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aroh.jueju;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

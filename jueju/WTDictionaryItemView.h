@@ -9,8 +9,11 @@
 #import <DQAlertView/DQAlertView.h>
 #import "WTNote.h"
 
-@interface WTDictionaryItemView : DQAlertView
+@interface WTDictionaryItemView : UIView
 @property (nonatomic) WTNote * note;
 
 @property (nonatomic, assign) UIEdgeInsets padding;
+
+-(void)show;
+-(void)dismiss;
 @end

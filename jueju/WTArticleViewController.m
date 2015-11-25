@@ -13,6 +13,10 @@
 #import <SwipeView/SwipeView.h>
 #import "WTArticleManager.h"
 #import "WTArticleSummaryViewController.h"
+#import "WTNote.h"
+#import "WTDictionaryItemView.h"
+
+#define TAG_ARTICLE_VIEW 10000
 
 @interface WTArticleViewController ()<SwipeViewDataSource, SwipeViewDelegate>
 @property (nonatomic, readonly) WTArticleEntity * currentArticleEntity;
@@ -30,6 +34,8 @@
     
     UIBarButtonItem * _favButton;
     UIBarButtonItem * infoButton;
+    
+    __weak WTArticleView * _currentArticleView;
 }
 
 -(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
@@ -80,6 +86,7 @@
     _swipeView.dataSource = self;
     _swipeView.itemsToPreloadBackward = 1;
     _swipeView.itemsToPreloadForward = 1;
+    _swipeView.truncateFinalPage = YES;
     
 
     _swipeView.currentItemIndex = self.defaultIndex;
@@ -251,6 +258,18 @@
 -(void)viewTappedHandler:(UITapGestureRecognizer *)gesture{
 
 
+    WTArticleView * articleView = (WTArticleView *)[_swipeView.currentItemView viewWithTag:TAG_ARTICLE_VIEW];
+    
+    CGPoint location = [gesture locationInView:articleView.contentLabel];
+    WTNote * note = [articleView.contentLabel getLinkAtPoint:location];
+    if (note) {
+        WTDictionaryItemView * itemView = [[WTDictionaryItemView alloc]init];
+        itemView.note = note;
+        [itemView show];
+//        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:note.title message:note.detail delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+//        [alertView show];
+        return;
+    }
 //    NSLog(@"viewTappedHandler");
     [self.navigationController setToolbarHidden:!self.navigationController.toolbarHidden animated:YES];
 }
@@ -332,7 +351,7 @@
     
     
     if(!view){
-        UIEdgeInsets insert = UIEdgeInsetsMake(0, 20, 0, 20);
+        UIEdgeInsets insert = UIEdgeInsetsMake(0, 20, 0, 60);
         
 //        articleView = [[WTArticleView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.navigationController.navigationBar.frame) + 20,
 //                                                          CGRectGetWidth(self.view.bounds),
@@ -346,7 +365,7 @@
         articleView.showsVerticalScrollIndicator = NO;
         articleView.padding = insert;
         articleView.bounces = NO;
-        articleView.tag = 10000;
+        articleView.tag = TAG_ARTICLE_VIEW;
         
         [view addSubview:articleView];
         
